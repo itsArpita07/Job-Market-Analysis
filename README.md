@@ -92,10 +92,10 @@ plt.show()
 ### Top 10 Job Locations for Data Analysts in the U.S.
 
 The following visualization displays the top 10 U.S. locations with the highest number of Data Analyst job postings.
+📓 Detailed steps and visualizations can be found in the notebook: [`1_EDA.ipynb`](https://github.com/itsArpita07/Job-Market-Analysis/blob/main/1_EDA.ipynb)
+
 
 ![Top 10 Job Locations](https://github.com/itsArpita07/Job-Market-Analysis/blob/main/Images/output_1.png)
-
-
 *Bar graph visualizing the number of job postings by location for Data Analysts in the U.S.*
 
 
@@ -160,7 +160,6 @@ plt.show()
 The following visualization displays the top 5 skills for each data job title, highlighting the skill count associated with each role.
 
 ![Top 5 Skills for Each Job Title](https://github.com/itsArpita07/Job-Market-Analysis/blob/main/Images/output_3.png)
-
 *Bar graph visualizing the salary for the top 3 data roles and their top 5 skills associated with each.*
 
 ## 📝 Insights
@@ -199,7 +198,6 @@ plt.show()
 The following visualization displays the top trending skills for Data Analysts throughout 2023, showing the likelihood of these skills appearing in job postings over time.
 
 ![Trending Top Skills for Data Analysts](https://github.com/itsArpita07/Job-Market-Analysis/blob/main/Images/output_4.png)
-
 *Line plot visualizing the trending top skills for Data Analysts in the U.S. throughout 2023.*
 
 ## 📝 Insights
@@ -242,7 +240,6 @@ plt.show()
 The following visualization displays the salary distributions for the top 5 data job titles in the U.S.
 
 ![Salary Distributions of Data Jobs](https://github.com/itsArpita07/Job-Market-Analysis/blob/main/Images/output_5.png)
-
 *Box plot visualizing the yearly salary distributions for the top 5 data job titles in the U.S.*
 
 ## 📝 Insights
@@ -277,7 +274,6 @@ plt.show()
 The following visualizations display the highest-paid and most in-demand skills for Data Analysts in the U.S.
 
 ![Highest Paid Skills for Data Analysts](https://github.com/itsArpita07/Job-Market-Analysis/blob/main/Images/output_6.png)
-
 *Bar charts visualizing the highest-paid and most in-demand skills for Data Analysts in the U.S., based on median salary.*
 
 ## 📝 Insights
@@ -321,7 +317,6 @@ plt.show()
 The following visualization displays the average salary variations for Data Analysts in the U.S. based on their work setting (Remote, Hybrid, and Onsite).
 
 ![Average Salary by Work Setting for Data Analysts](https://github.com/itsArpita07/Job-Market-Analysis/blob/main/Images/output_7.png)
-
 *Bar chart visualizing the average salary by work setting (Remote, Hybrid, and Onsite) for Data Analysts in the U.S.*
 
 ## 📝 Insights
