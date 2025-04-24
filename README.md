@@ -242,8 +242,9 @@ plt.show()
 ### Salary Distributions of Data Jobs in the U.S.
 The following visualization displays the salary distributions for the top 5 data job titles in the U.S.
 
-![Salary Distributions of Data Jobs](https://github.com/itsArpita07/Job-Market-Analysis/blob/main/Images/output_5.png)
+![Salary Distributions of Data Jobs](https://github.com/itsArpita07/Job-Market-Analysis/blob/main/Images/output_5.png)  
 *Box plot visualizing the yearly salary distributions for the top 5 data job titles in the U.S.*
+
 
 ## 📝 Insights
 
