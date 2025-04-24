@@ -121,7 +121,6 @@ plt.show()
 The following visualization displays the top 10 U.S. companies with the highest number of Data Analyst job postings.
 
 ![Top 10 Companies](https://github.com/itsArpita07/Job-Market-Analysis/blob/main/Images/output_2.png)
-
 *Bar graph visualizing the number of job postings by company for Data Analysts in the U.S.*
 
 
