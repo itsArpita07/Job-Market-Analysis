@@ -96,8 +96,9 @@ plt.show()
 
 ### Top 10 Job Locations for Data Analysts in the U.S.
 
-![Top 10 Job Locations](https://github.com/itsArpita07/Job-Market-Analysis/blob/main/Images/output_1.png)
+![Top 10 Job Locations](https://github.com/itsArpita07/Job-Market-Analysis/blob/main/Images/output_1.png)  
 *Bar graph visualizing the number of job postings by location for Data Analysts in the U.S.*
+
 
 ## 🏢 Top 10 Companies for Data Analyst Roles in the U.S.
 
