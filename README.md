@@ -69,6 +69,11 @@ Each Jupyter notebook in this project focuses on a specific aspect of the data j
 
 To focus the analysis specifically on the U.S. job market, the dataset is filtered to include only job listings located in the **United States**.
 
+The following visualization displays the top 10 U.S. locations with the highest number of Data Analyst job postings.
+📓 Detailed steps and visualizations can be found in the notebook: [`1_EDA.ipynb`](https://github.com/itsArpita07/Job-Market-Analysis/blob/main/1_EDA.ipynb)
+
+
+
 ```python
 df_DA_US = df[(df['job_title_short'] == 'Data Analyst') & (df['job_country'] == 'United States')]
 ```
@@ -90,10 +95,6 @@ plt.show()
 ## 🖼️ Results
 
 ### Top 10 Job Locations for Data Analysts in the U.S.
-
-The following visualization displays the top 10 U.S. locations with the highest number of Data Analyst job postings.
-📓 Detailed steps and visualizations can be found in the notebook: [`1_EDA.ipynb`](https://github.com/itsArpita07/Job-Market-Analysis/blob/main/1_EDA.ipynb)
-
 
 ![Top 10 Job Locations](https://github.com/itsArpita07/Job-Market-Analysis/blob/main/Images/output_1.png)
 *Bar graph visualizing the number of job postings by location for Data Analysts in the U.S.*
