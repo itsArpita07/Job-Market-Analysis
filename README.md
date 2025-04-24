@@ -202,4 +202,132 @@ The following visualization displays the top trending skills for Data Analysts t
 ![Trending Top Skills for Data Analysts](https://github.com/itsArpita07/Data-Project/blob/main/Project/Images/output_4.png)
 
 *Line plot visualizing the trending top skills for Data Analysts in the U.S. throughout 2023.*
-  
+
+## 📝 Insights
+
+- SQL remains the most consistently demanded skill for Data Analysts throughout 2023, starting above 60% and ending the year closer to 54%. While it shows a gradual downward trend, it still leads as the top skill across job postings.
+
+- Excel experienced a significant increase in demand starting around September. By the end of the year, it surpassed both Python and Tableau, reflecting its rising importance in the data analyst toolkit.
+
+- Both Python and Tableau maintained relatively stable demand throughout 2023. Despite minor fluctuations, their consistent appearance in job postings highlights their continued relevance and necessity.
+
+- Power BI, while less demanded compared to the other skills, showed a slight upward trend towards the end of the year—suggesting a growing preference for it among employers.
+
+## 3️⃣ How Well Do Jobs and Skills Pay for Data Analysts?
+
+To identify the highest-paying roles and skills, only U.S.-based jobs were considered, with a focus on their median salary. The analysis began by exploring the salary distributions of common data roles like Data Scientist, Data Engineer, and Data Analyst to determine which positions offered the highest pay.
+
+📓 View my notebook with detailed steps here: [4_Salary_Analysis](./Project/4_Salary_Analysis.ipynb)
+
+---
+
+## 📊 Visualize Data
+
+The following box plot visualizes the distribution of average yearly salaries for the top 5 data job titles in the U.S.
+
+### 📊 Python Visualization Code
+```python
+sns.boxplot(data=df_US_top5, x='salary_year_avg', y='job_title_short', order=job_order)
+sns.despine()
+
+plt.title('Salary Distributions of Data Jobs in the US', fontsize=16, weight='bold')
+plt.xlabel('Yearly Salary (USD)')
+plt.xlim(0, 600000) 
+ticks_x = plt.FuncFormatter(lambda y, pos: f'${int(y/1000)}K')
+plt.gca().xaxis.set_major_formatter(ticks_x)
+plt.show()
+```
+## 🖼️ Results
+
+### Salary Distributions of Data Jobs in the U.S.
+The following visualization displays the salary distributions for the top 5 data job titles in the U.S.
+
+![Salary Distributions of Data Jobs](Project/Images/output_5.png)
+
+*Box plot visualizing the yearly salary distributions for the top 5 data job titles in the U.S.*
+
+## 📝 Insights
+
+- There's significant variation in salary ranges across different data job titles. Senior Data Scientist roles tend to have the highest salary potential, reaching up to $600K, highlighting the high value placed on advanced data skills and experience.
+- Senior Data Engineer and Senior Data Scientist positions show a notable number of outliers on the higher end of the salary spectrum, indicating that exceptional skills or circumstances can lead to very high pay in these roles.
+- Data Analyst roles tend to have more consistent salaries with fewer outliers, showing less fluctuation compared to higher-level positions.
+- As roles become more senior, such as Senior Data Scientist and Senior Data Engineer, median salaries increase. These roles also exhibit wider salary ranges, reflecting the greater variance in compensation as responsibilities grow.
+
+## Highest Paid & Most Demanded Skills for Data Analysts
+The analysis was narrowed to focus only on data analyst roles, examining the highest-paid and most in-demand skills. Two bar charts were used to visually present these insights.
+
+## 📊 Visualize Data
+
+The following bar charts visualize the highest-paid and most in-demand skills for Data Analysts in the U.S.
+
+### 📊 Python Visualization Code
+```python
+fig, ax = plt.subplots(2, 1)
+
+# Top 10 Highest Paid Skills for Data Analysts
+sns.barplot(data=df_DA_top_pay, x='median', y=df_DA_top_pay.index, hue='median', ax=ax[0], palette='dark:b_r')
+
+# Top 10 Most In-Demand Skills for Data Analysts
+sns.barplot(data=df_DA_skills, x='median', y=df_DA_skills.index, hue='median', ax=ax[1], palette='light:b')
+
+plt.show()
+```
+## 🖼️ Results
+
+### Highest Paid & Most In-Demand Skills for Data Analysts in the U.S.
+The following visualizations display the highest-paid and most in-demand skills for Data Analysts in the U.S.
+
+![Highest Paid Skills for Data Analysts](Project/Images/output_6.png)
+
+*Bar charts visualizing the highest-paid and most in-demand skills for Data Analysts in the U.S., based on median salary.*
+
+## 📝 Insights
+
+- There's a clear distinction between the highest-paid and most in-demand skills for Data Analysts.
+- The highest-paid skills often fall outside traditional data analysis tools. For example, **dplyr** commands the highest median salary, approaching $200,000, indicating that specialized technical skills can significantly increase earning potential.
+- Development and infrastructure-related skills such as **Bitbucket**, **Gitlab**, and **Solidity** also show high earning potential, with median salaries around $175,000. The **Hugging Face** NLP library is another skill in this high-salary range.
+- On the other hand, the most in-demand skills align more closely with conventional data analysis roles. **Python** stands out as the most in-demand skill with a median salary of around $110,000, followed by **Tableau**, **R**, **SQL Server**, and **SQL**, all with median salaries in the $100,000 range.
+- **Excel** and **Word**, while still in demand, have a lower median salary of approximately $75,000, emphasizing their foundational but less specialized role in the data analysis field.
+- Data analysts aiming to maximize their career potential should consider developing a balanced skill set that includes both high-paying specialized skills and widely demanded foundational skills.
+
+## 4️⃣ How do average salaries for Data Analysts vary by work setting?
+
+To explore how average salaries for Data Analysts vary by work setting, the analysis focused on U.S.-based job postings, with a particular emphasis on median salary figures. The study began by comparing the salary distributions of Data Analysts in different work settings—remote, hybrid, and onsite—to identify any significant variations in compensation based on work location.
+
+View the detailed steps in my notebook here: [5_Remote_vs_Onsite](./Project/5_Remote_vs_Onsite.ipynb).
+
+## 📊 Visualize Data
+
+The following bar chart visualizes the average salary variations for Data Analyst roles in the U.S. based on work setting (Remote, Hybrid, and Onsite).
+
+### 📊 Python Visualization Code
+```python
+sns.set_theme(style='ticks')
+
+plt.figure(figsize=(6, 4))
+ax = sns.barplot(data=df_DA_US, x='work_setting', y='salary_year_avg', width=0.5, ci=None)
+sns.despine()
+
+plt.gca().yaxis.set_major_formatter(FuncFormatter(lambda x, _: f'${x/1000:,.0f}K'))
+
+plt.title('Average Salary by Work Setting (US Data Analyst Roles)', fontsize=16, fontweight='bold', pad=20)
+plt.ylabel('Average Salary (USD)')
+
+plt.tight_layout()
+plt.show()
+```
+## 🖼️ Results
+
+### Average Salary by Work Setting for Data Analysts in the U.S.
+The following visualization displays the average salary variations for Data Analysts in the U.S. based on their work setting (Remote, Hybrid, and Onsite).
+
+![Average Salary by Work Setting for Data Analysts](Project/Images/output_7.png)
+
+*Bar chart visualizing the average salary by work setting (Remote, Hybrid, and Onsite) for Data Analysts in the U.S.*
+
+## 📝 Insights
+
+- The graph compares the average salaries for Data Analyst roles across three work settings: Onsite, Remote, and Hybrid.
+- Remote work settings offer the highest average salary, with an average of approximately $90,000.
+- Onsite work settings have the lowest average salary, at around $85,000.
+- Hybrid work settings offer a competitive average salary, approximately $88,000, falling between Remote and Onsite settings.
