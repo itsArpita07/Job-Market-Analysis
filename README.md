@@ -406,3 +406,4 @@ This analysis serves as a foundation for ongoing research and further questions,
 - What trends are emerging in entry-level versus senior-level data roles?
 
 Continued exploration and updated datasets will provide even deeper insight into this fast-evolving field.
+
